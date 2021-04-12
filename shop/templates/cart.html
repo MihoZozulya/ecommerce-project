@@ -67,12 +67,12 @@
 							add_shopping_cart
 							</span>
 						</a>
-						<a href="">
+						<a href="{% url 'cart_remove' cart_item.product.id %}">
 							<span class="material-icons cart-icon">
 							remove_circle_outline
 							</span>
 						</a>
-						<a href="">
+						<a href="{% url 'cart_remove_product' cart_item.product.id %}">
 							<span class="material-icons cart-icon">
 							delete_forever
 							</span>
@@ -83,12 +83,12 @@
 
 					<td>
 						
-						<a href="">
+						<a href="{% url 'cart_remove' cart_item.product.id %}">
 							<span class="material-icons cart-icon">
 							remove_circle_outline
 							</span>
 						</a>
-						<a href="">
+						<a href="{% url 'cart_remove_product' cart_item.product.id %}">
 							<span class="material-icons cart-icon">
 							delete_forever
 							</span>
